@@ -9,5 +9,30 @@
 		<property name="sal" value="1000" />
 
 	</bean>
+	<bean id="t" class="org.techhub.model.Test">
+		<constructor-arg value="Ram" type="java.lang.String"
+			index="0" />
+		<constructor-arg value="Pune" type="java.lang.String"
+			index="1" />
+		<constructor-arg value="1" type="int" index="2" />
+		<constructor-arg value="50.5f" type="float" index="3" />
+	</bean>
+	<bean id="student" class="org.techhub.objdep.Student">
+		<property name="name" value="Ganesh" />
+		<property name="id" value="1" />
+		<property name="per" value="50.5f" />
+	</bean>
+	<bean id="c" class="org.techhub.objdep.College" autowire="autodetect">
 
+	</bean>
+	
+	<bean id="cn" class="org.techhub.colldep.College">
+	    <property name="studentNames">
+	       <list>
+	          <value>ram</value>
+	          <value>shyam</value>
+	          <value>ghanshyam</value>
+	       </list>
+	    </property>
+	</bean>
 </beans>
