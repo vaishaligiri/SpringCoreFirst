@@ -35,4 +35,34 @@
 	       </list>
 	    </property>
 	</bean>
+	<bean id="comp" class="org.techhub.mapdep.Company"  scope="prototype">
+	     <property name="studentList">
+	         <map>
+	            <entry key="1" value="Ram"/>
+	            <entry key="2" value="Shyam"/>
+	            <entry key="3" value="GhanShyam"/>
+	            
+	             
+	         </map>
+	     </property>
+	</bean>
+	
+	<bean id="tp" class="org.techhub.postconstruct.Test" init-method="show" destroy-method="display">
+	
+	</bean>
 </beans>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
